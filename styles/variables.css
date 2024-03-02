@@ -1,0 +1,26 @@
+/*
+  Переменные для вашего проекта
+  и их переопределение под различные устройства
+*/
+:root {
+  /* light */
+  --color-pink-1: #ff8dcb;
+  --color-pink-2: #ffc2e6;
+  --color-pink-3: #fff1f7;
+  --color-black-1: #353430;
+  --color-black-1-trans: #32312d40;
+
+  /* dark */
+  --color-purple-1: #db00ff;
+  --color-purple-2: #ff0070;
+  --color-purple-3: #f1b2ce;
+  --color-purple-4-trans: #ff007040;
+  --color-black-2: #000028;
+
+  /* text */
+  --page-font-family: "IBM Plex mono", monospace;
+
+  /* background */
+  --page-background-color: var(--color-black-2, #000028);
+  --page-background-image: url("../images/cover-image-dark.png");
+}
