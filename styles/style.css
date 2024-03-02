@@ -150,6 +150,11 @@
   gap: 20px;
 }
 
+.article {
+  display: grid;
+  gap: 10px;
+}
+
 .articles-list {
   display: grid;
   gap: 20px;
