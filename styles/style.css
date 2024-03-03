@@ -21,7 +21,7 @@
   display: inline-flex;
   align-items: center;
   gap: 10px;
-  inset-inline-end: 20px;
+  inset-inline-end: 19px;
   inset-block-start: 10px;
   visibility: var(--rec-decor-visibility, visible);
 }
@@ -76,7 +76,8 @@
 
 .header__theme-menu {
   justify-self: end;
-  margin-block: 66px;
+  margin-block-start: 66px;
+  margin-block-end: 66px;
 }
 
 .header__theme-menu-list {
@@ -114,7 +115,7 @@
 .page-title {
   color: var(--main-color, #db00ff);
   font-weight: 700;
-  font-size: clamp(7.25rem, 5.7694rem + 6.3174vw, 9.8125rem);
+  font-size: clamp(7.25rem, 7.0108rem + 1.0204vw, 7.5rem);
   line-height: 82.5%;
   text-shadow: 4px 4px 0 var(--second-color, #ff0070);
 }
@@ -159,6 +160,10 @@
   gap: 20px;
 }
 
+.section-how__title {
+  margin-block-end: 20px;
+}
+
 .article {
   display: grid;
   gap: 10px;
@@ -172,6 +177,7 @@
 .shadow-decor {
   text-shadow: 2px 2px 0 var(--second-color, #ff0070);
 }
+
 
 .section-gallery {
   gap: 10px;
@@ -196,4 +202,77 @@
 
 .footer__tittle-margin {
   margin-block-start: 5px;
+}
+
+@media (width >= 768px) {
+  .rec {
+    inset-inline-end: 29px;
+    inset-block-start: 20px;
+  }
+
+  .decorated-zone::before {
+    top: 20px;
+    right: 20px;
+  }
+
+  .decorated-zone::after {
+    bottom: 20px;
+    left: 20px;
+  }
+
+  .page-title {
+    font-size: clamp(7.5rem, 0.5625rem + 14.4531vw, 9.8125rem);
+  }
+
+  .header {
+    padding-inline-start: 0;
+  }
+
+  .header__theme-menu {
+    margin-block-start: 173px;
+    margin-block-end: 65px;
+  }
+
+  .header__title {
+    justify-self: end;
+    inline-size: calc(clamp(22.75rem, 49.609vw - 1.063rem, 30.688rem));
+  }
+
+  .section {
+    grid-template-columns: calc(clamp(14.75rem, 30.859vw - 0.063rem, 19.688rem)) 1fr;
+  }
+
+  .section-what__m {
+    grid-column-start: span 2;
+  }
+
+  .section-how__m {
+    grid-column-start: 2;
+  }
+
+
+  .main {
+    gap: 80px;
+    padding: 60px 20px;
+  }
+
+  .section-gallery {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .gallery-list {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+  }
+
+  .gallery-list__item:first-child,
+  .gallery-list__item:last-child {
+    grid-column-end: span 2;
+  }
+
+  .gallery-list__item:nth-child(2),
+  .gallery-list__item:nth-child(3) {
+    grid-row-end: span 2;
+  }
 }
