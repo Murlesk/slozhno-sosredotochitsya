@@ -1,7 +1,3 @@
-/*
-  Переменные для вашего проекта
-  и их переопределение под различные устройства
-*/
 :root {
   /* light */
   --color-pink-1: #ff8dcb;
@@ -19,8 +15,17 @@
 
   /* text */
   --page-font-family: "IBM Plex mono", monospace;
+  --rec-decor-visibility: visible;
 
   /* background */
   --page-background-color: var(--color-black-2, #000028);
   --page-background-image: url("../images/cover-image-dark.png");
+
+  /* var */
+  --text-color: var(--color-pink-2, #f1b2ce);
+  --main-color: var(--color-purple-1, #db00ff);
+  --second-color: var(--color-purple-2, #ff0070);
+  --second-color-4-trans: var(--color-purple-4-trans, #ff007040);
+  --accent-color: var(--color-purple-2, #ff0070);
+  --highlight-color: var(--color-black-2, #000028);
 }
